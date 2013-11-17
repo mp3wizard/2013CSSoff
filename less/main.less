@@ -99,10 +99,29 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* Variable */
+@grey: #8d8d8d;
+@greyLight: #bfbfbf;
+@yellowLight: #fdcd84;
 
-body { width: 1280px; margin: 0 auto; }
+html:before { content: ''; width: 50%; height: 1025px; position: absolute; left: 0; top: 0; background: url('../img/bgBody.png') repeat-x; z-index: -1;}
+body { width: 960px; margin: 0 auto; font-family: 'Merriweather'; font-weight: 300; color: #000; }
+em { font-style: normal; }
 
+header { position: relative;
+	>h1 { color: #fff; font-family: 'Lato'; font-weight: 100; font-size: 279px; width: 500px; top: 16px; left: -38px; position: absolute; line-height: 225px; margin: 0;}
+	>h2 { position: absolute; right: 0; top: 142px; margin: 0; font-family: 'Lora'; font-size: 12px; font-style: italic; color: #b0aeb8; text-transform: uppercase; letter-spacing: 2px; }
+}
 
+footer { border-top: solid 1px #e5e5e5; padding: 20px 0 55px;
+	p, address { width: 50%; margin: 0; line-height: 19px; } 
+	p {  font-family: 'Lato'; font-weight: 400; color: @grey; float: left;
+		em { color: @greyLight; }
+	}
+	address { float: right; text-align: right; font-size: 13px; font-style: normal; color: #989898; padding-top: 2px; 
+		strong { font-size: 900; }
+	}
+}
 
 
 
