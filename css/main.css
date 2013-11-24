@@ -420,9 +420,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* Variable */
+html {
+  overflow-x: hidden;
+  min-width: 960px;
+  width: 100%;
+}
 html:before {
   content: '';
-  width: 50%;
+  width: 45%;
   height: 1025px;
   position: absolute;
   left: 0;
@@ -442,6 +447,7 @@ em {
 }
 header {
   position: relative;
+  height: 300px;
 }
 header > h1 {
   color: #fff;
@@ -454,6 +460,10 @@ header > h1 {
   position: absolute;
   line-height: 225px;
   margin: 0;
+  letter-spacing: 10px;
+}
+header > h1 em {
+  letter-spacing: -10px;
 }
 header > h2 {
   position: absolute;
@@ -496,6 +506,46 @@ footer address {
 }
 footer address strong {
   font-size: 900;
+}
+main section:first-child aside {
+  color: #5e5c66;
+  text-align: center;
+  width: 400px;
+  float: left;
+}
+main section:first-child aside img {
+  visibility: hidden;
+}
+main section:first-child article {
+  float: right;
+  width: 505px;
+  color: #000;
+  position: relative;
+  font-size: 25px;
+  font-weight: 300;
+}
+main section:first-child article img {
+  position: absolute;
+  left: -182px;
+  top: -178px;
+  z-index: -1;
+}
+main section:first-child article h2 {
+  color: #fdcd84;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  font-size: 75px;
+  font-weight: 400;
+  line-height: 80px;
+  margin: 192px 0 0;
+}
+main section:first-child article h2 em {
+  display: block;
+  font-size: 13px;
+  font-family: 'Merriweather';
+  font-weight: 400;
+  color: #cbb8a0;
+  line-height: 20px;
 }
 /* ==========================================================================
    Helper classes
