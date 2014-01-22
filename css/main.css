@@ -427,7 +427,7 @@ html {
 }
 html:before {
   content: '';
-  width: 45%;
+  width: 44.0625%;
   height: 1025px;
   position: absolute;
   left: 0;
@@ -447,28 +447,30 @@ em {
 }
 header {
   position: relative;
-  height: 300px;
+  height: 320px;
 }
 header > h1 {
   color: #fff;
   font-family: 'Lato';
   font-weight: 100;
-  font-size: 279px;
+  font-size: 310px;
   width: 500px;
-  top: 16px;
-  left: -38px;
+  top: 52px;
+  left: -105px;
   position: absolute;
-  line-height: 225px;
+  line-height: 224px;
   margin: 0;
-  letter-spacing: 10px;
+  letter-spacing: 12px;
 }
 header > h1 em {
-  letter-spacing: -10px;
+  letter-spacing: -13px;
+  display: block;
+  margin-top: 30px;
 }
 header > h2 {
   position: absolute;
   right: 0;
-  top: 142px;
+  top: 155px;
   margin: 0;
   font-family: 'Lora';
   font-size: 12px;
@@ -526,8 +528,8 @@ main section:first-child article {
 }
 main section:first-child article img {
   position: absolute;
-  left: -182px;
-  top: -178px;
+  left: -213px;
+  top: -152px;
   z-index: -1;
 }
 main section:first-child article h2 {
